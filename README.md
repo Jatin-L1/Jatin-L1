@@ -1,5 +1,5 @@
 # 💫 About Me:
-Hey there! 👋 I’m **Jatin Sharma**, a Computer Science student at Chitkara University, with a love for web development and solving problems through code. Right now, I’m working on a **chatting website** called **SecureX** 💬 and learning **JavaScript** along with **Java + DSA**. When I have some free time, I enjoy **cloning websites** just for fun 🌐—it helps me practice and improve my skills. Always eager to learn something new and take on challenges. Let’s connect and collaborate on something awesome! 😊
+Hey there! 👋 I’m **Jatin Sharma**, a Computer Science student at Chitkara University, with a love for solving problems through code. Right now, I’m working on a **chatting website** called **SecureX** 💬 and learning **JavaScript** along with **Java + DSA**. When I have some free time, I enjoy **cloning websites** just for fun 🌐—it helps me practice and improve my skills. Always eager to learn something new and take on challenges. Let’s connect and collaborate on something awesome! 😊
 
 
 ## 🌐 Socials:
