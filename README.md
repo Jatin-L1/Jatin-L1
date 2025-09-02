@@ -40,11 +40,10 @@
 🎓 **Computer Science Engineering Student** at Chitkara University  
 📊 **CGPA: 8.89/10** | Expected Graduation: 2027  
 💡 **AI & Blockchain Enthusiast** building intelligent solutions  
-🏆 **HackRx 2025 Finalist** (Bajaj Finserv)  
+🏆 **HackRx 2025 Top 500** (Bajaj Finserv)  
 📚 **Research Contributor** with **16+ published papers**  
 🌟 **Peer Mentor** at OSC, helping **20+ developers**  
 🧩 **LeetCode Warrior** - **550+ problems solved**  
-⭐ **Top 10%** in Dynamic Programming & Graph categories  
 
 <br clear="both">
 
@@ -155,7 +154,7 @@
   <table>
     <tr>
       <td align="center">
-        <img src="https://img.shields.io/badge/🏆-HackRx%202025%20Finalist-FF6B6B?style=for-the-badge"/>
+        <img src="https://img.shields.io/badge/🏆-HackRx%202025%20Top-500-FF6B6B?style=for-the-badge"/>
         <br><sub>Bajaj Finserv - AI Platform</sub>
       </td>
       <td align="center">
