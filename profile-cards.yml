@@ -1,0 +1,50 @@
+name: Refresh profile cards
+
+on:
+  schedule:
+    - cron: "17 1 * * *"      # daily, 01:17 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["scripts/**", "assets/**", ".github/workflows/profile-cards.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-cards
+  cancel-in-progress: true
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install font tooling
+        run: pip install fonttools brotli pillow
+
+      - name: Refresh contribution data
+        env:
+          # Optional PROFILE_TOKEN (classic PAT, read:user) adds private contributions.
+          GH_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+        run: python scripts/fetch_contributions.py
+
+      - name: Render cards
+        run: python scripts/render_cards.py
+
+      - name: Commit data and cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data cards
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+          else
+            git commit -m "chore: refresh profile cards"
+            git push
+          fi
